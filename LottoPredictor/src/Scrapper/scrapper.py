@@ -3,7 +3,7 @@ import csv
 import urllib.request as urllib
 from bs4 import BeautifulSoup
 
-from src.Config import reader
+from LottoPredictor.src.Config import reader
 
 print('Loading config...')
 

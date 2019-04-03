@@ -1,16 +1,16 @@
 import unittest
-import src.DataConverter.dataConverter as dataConverter
+import LottoPredictor.src.DataConverter.dataConverter as dataConverter
 
 
 class TestDataConverter(unittest.TestCase):
     __input_data_asc = [
-        ['1', '2018-12-09', '1', '2', '3', '4', '5', '6'],
-        ['2', '2018-12-09', '7', '8', '9', '10', '11', '12'],
+        ['1.', '2018-12-09', '1', '2', '3', '4', '5', '6'],
+        ['2.', '2018-12-09', '7', '8', '9', '10', '11', '12'],
     ]
 
     __input_data_desc = [
-        ['2', '2018-12-09', '12', '11', '10', '9', '8', '7'],
-        ['1', '2018-12-09', '6', '5', '4', '3', '2', '1'],
+        ['2.', '2018-12-09', '12', '11', '10', '9', '8', '7'],
+        ['1.', '2018-12-09', '6', '5', '4', '3', '2', '1'],
     ]
 
     def test_get_numbers_as_list_converts_list_of_sets_into_unordered_list_of_numbers(self):

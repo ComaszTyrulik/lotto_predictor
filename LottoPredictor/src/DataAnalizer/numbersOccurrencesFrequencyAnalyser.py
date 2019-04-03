@@ -1,5 +1,5 @@
 from collections import OrderedDict
-from src.DataConverter import dataConverter
+from LottoPredictor.src.DataConverter import dataConverter
 
 
 class NumbersOccurrencesFrequencyAnalyser:
@@ -52,10 +52,8 @@ class NumbersOccurrencesFrequencyAnalyser:
         return list_of_numbers_occurrences
 
     def get_six_most_frequent_numbers(self, data):
-        numbers_list = self.converter.get_numbers_as_list(data)
-
         list_of_numbers_occurrences = OrderedDict(
-            sorted(self.get_list_of_numbers_occurrences(numbers_list).items(), key=lambda t: t[1])
+            sorted(self.get_list_of_numbers_occurrences(data).items(), key=lambda t: t[1])
         )
 
         list_keys = list(list_of_numbers_occurrences.keys())
@@ -69,10 +67,8 @@ class NumbersOccurrencesFrequencyAnalyser:
         ]
 
     def get_six_least_frequent_numbers(self, data):
-        numbers_list = self.converter.get_numbers_as_list(data)
-
         list_of_numbers_occurrences = OrderedDict(
-            sorted(self.get_list_of_numbers_occurrences(numbers_list).items(), key=lambda t: t[1])
+            sorted(self.get_list_of_numbers_occurrences(data).items(), key=lambda t: t[1])
         )
 
         list_keys = list(list_of_numbers_occurrences.keys())

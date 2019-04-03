@@ -7,7 +7,6 @@ class DataConverter:
         numbers_list = []
         for row in data:
             numbers_list.extend(row[2:len(row)])
-
         if sort:
             numbers_list.sort()
 

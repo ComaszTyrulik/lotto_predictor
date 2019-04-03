@@ -1,8 +1,8 @@
 import csv
 
-from src.Config import reader
-from src.DataAnalizer import numbersOccurrencesFrequencyAnalyser
-from src.DataConverter import dataConverter
+from LottoPredictor.src.Config import reader
+from LottoPredictor.src.DataAnalizer import numbersOccurrencesFrequencyAnalyser
+from LottoPredictor.src.DataConverter import dataConverter
 
 config_reader = reader.ConfigReader()
 results_filename = config_reader.get_lottery_results_filename()
